@@ -8,6 +8,7 @@ for state in states:
 
 random.shuffle(states)
 # print(states)
+# def 
 app_score = 0
 app = True
 while app:
@@ -24,6 +25,11 @@ while app:
 			if answer != state["capital"]:
 				state['incorrect'] += 1
 				print("oooh sorry, wrong!")
+			if app_score == 5
+				print("game over you did it!")
+				play_again = input("wanna play again? (y to restart)")
+				if play_again == "y":
+							
 
 
 
