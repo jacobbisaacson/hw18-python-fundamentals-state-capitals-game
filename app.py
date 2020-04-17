@@ -11,6 +11,6 @@ while app:
 	app_start = input("Play the state capitals game? (y to start)")
 	if app_start == "y":
 		print ("nice!  this is better than sporcle anyway")
-		answer = input(f"type the capital of {states[0]}")
+		answer = input(f"type the capital of {states[0]['name']}")
 
 
