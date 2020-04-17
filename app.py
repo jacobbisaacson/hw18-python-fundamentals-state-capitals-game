@@ -4,12 +4,13 @@ import random
 # print(states)
 
 random.shuffle(states)
-print(states)
+# print(states)
 
 app = True
 while app:
 	app_start = input("Play the state capitals game? (y to start)")
 	if app_start == "y":
-		print
+		print ("nice!  this is better than sporcle anyway")
+		answer = input(f"type the capital of {states[0]}")
 
 
