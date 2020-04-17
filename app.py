@@ -17,7 +17,12 @@ while app:
 		for state in states:
 			answer = input(f"type the capital of {state['name']}: ")
 			if answer == state["capital"]:
-				print("correct! you is smart, you is kind, you is important")
+				state['correct'] += 1
+				print("correct! you is kind, you is smart, you is important")
+				print(f"you have {state['correct']} point!")
+			if answer != state["capital"]:
+				state['incorrect'] += 1
+				print("wrong!")
 
 
 
