@@ -1,4 +1,4 @@
-print('hw18')
+# print('hw18')
 from capitals import states
 import random
 # print(states)
@@ -19,10 +19,11 @@ while app:
 			if answer == state["capital"]:
 				state['correct'] += 1
 				print("correct! you is kind, you is smart, you is important")
-				print(f"you have {state['correct']} point!")
+				print(f"you have gotten {state['correct']} right!")
 			if answer != state["capital"]:
 				state['incorrect'] += 1
 				print("wrong!")
+				print(f"oooh sorry, you have gotten {state['incorrect']} wrong.")
 
 
 
