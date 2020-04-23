@@ -25,18 +25,18 @@ while app:
 			if answer != state["capital"]:
 				state['incorrect'] += 1
 				print("oooh sorry, wrong!")
-
-				# HERE'S WHERE TO ASK FOR HELP
-				# CAN'T JUST DO AN IF APP_SCORE = 5 (or 50) then ask input to play again...
-		print("nice job! game over!")
-		play_again = input("wanna play again? (y to restart)")
-
+		print('you win!')
+		app_again = input(f"wanna play again? (y to restart)")
+		if app_again == 'y':
+			app = True
+		else:
+			app = False
+	else:
+		print("k fine bye!")
+		app = False
 
 		if play_again == "y":
 			app = True
-		else:
-			print("k fine bye!")
-			app = False
 							
 
 
