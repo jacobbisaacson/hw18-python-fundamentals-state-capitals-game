@@ -9,7 +9,7 @@ shuffle(states)
 
 game = True
 while game:
-	game_start = input("Play the state capitals game? (type y to start)")
+	game_start = input("Play the state capitals game? (type y to start): ")
 	if game_start == "y":
 			print('Lets go!')
 			for state in states:
@@ -24,10 +24,10 @@ while game:
 					print("No, sorry!")
 					print(f"You got it wrong {state['incorrect']} times! You got it right {state['correct']} times!")
 			print("You win!!!!")
-			game=False
+			game_play_again = input(f"Wanna play again? (type y to play again): ")
 	else: 
 		print("k, bye!")
-		game= False
+		game = False
 
 
 # # print('hw18')
